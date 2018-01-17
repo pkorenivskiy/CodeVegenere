@@ -1,4 +1,5 @@
 ﻿using System;
+using Vigenere;
 
 namespace CodeVigenere
 {
@@ -6,7 +7,10 @@ namespace CodeVigenere
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var cryptor = new  CryptVigenere();
+
+            cryptor.Encrypt("LEMON", "ATTACKATDAWN");
+            cryptor.Decrypt("LEMON", "LXFOPVEFRNHR");
         }
     }
 }
